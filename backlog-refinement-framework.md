@@ -1,3 +1,0 @@
-# Backlog Refinement Framework
-
-This document defines how backlog readiness is maintained...
