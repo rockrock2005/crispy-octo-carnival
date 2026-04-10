@@ -1,3 +1,0 @@
-# Product Requirements Document (PRD)
-
-This document describes what will be built and why...
