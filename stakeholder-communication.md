@@ -1,3 +1,0 @@
-# Stakeholder Communication
-
-This document describes structured communication with stakeholders...
