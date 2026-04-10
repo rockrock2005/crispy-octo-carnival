@@ -1,0 +1,3 @@
+# Product Vision & Strategy
+
+This document defines the long‑term direction of the product...
