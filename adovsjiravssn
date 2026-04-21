@@ -1,0 +1,138 @@
+# Platform Comparison: ServiceNow vs Microsoft ADO vs Atlassian JIRA
+
+> **Scope:** Feature Matrix · Pros & Cons · Documentation · Team Communication
+> **Date:** April 2026
+
+-----
+
+## 1. Feature Comparison Matrix
+
+|Feature Category         |Feature                       |ServiceNow        |Microsoft ADO     |Atlassian JIRA          |
+|-------------------------|------------------------------|:----------------:|:----------------:|:----------------------:|
+|**Core Work Management** |Issue / Ticket Tracking       |✅                 |✅                 |✅                       |
+|                         |Backlog Management            |⚠️                 |✅                 |✅                       |
+|                         |Sprint / Iteration Planning   |⚠️                 |✅                 |✅                       |
+|                         |Kanban Boards                 |✅                 |✅                 |✅                       |
+|                         |Custom Workflows              |✅ Advanced        |✅                 |✅                       |
+|                         |Task Dependencies             |✅                 |✅                 |✅                       |
+|                         |Epics & Story Hierarchy       |⚠️                 |✅                 |✅                       |
+|**Documentation**        |Built-in Wiki / Knowledge Base|✅ (Knowledge Mgmt)|✅ (Azure Wiki)    |⚠️ (Confluence add-on)   |
+|                         |Version-Controlled Docs       |⚠️                 |✅ Git-backed      |⚠️ (via Confluence)      |
+|                         |Template Library              |✅                 |✅                 |✅                       |
+|                         |Linking Docs to Work Items    |✅                 |✅                 |✅                       |
+|                         |Diagrams & Whiteboarding      |⚠️                 |✅                 |⚠️ (via Confluence)      |
+|**Team Communication**   |In-ticket Comments & @Mentions|✅                 |✅                 |✅                       |
+|                         |Native Chat / Messaging       |❌                 |⚠️ (Teams required)|❌                       |
+|                         |Microsoft Teams Integration   |✅                 |✅ Native          |⚠️ Plugin                |
+|                         |Slack Integration             |✅                 |✅                 |✅ Native                |
+|                         |Email Notifications           |✅                 |✅                 |✅                       |
+|                         |Real-time Collaboration       |⚠️                 |✅                 |✅                       |
+|                         |Activity Feeds                |✅                 |✅                 |✅                       |
+|**Reporting & Analytics**|Built-in Dashboards           |✅ Advanced        |✅                 |✅                       |
+|                         |Custom Reports                |✅                 |✅                 |✅                       |
+|                         |Velocity / Burndown Charts    |⚠️                 |✅                 |✅                       |
+|                         |SLA Tracking                  |✅                 |⚠️                 |⚠️ (JSM add-on)          |
+|                         |Power BI Integration          |✅                 |✅ Native          |⚠️ Plugin                |
+|**DevOps & CI/CD**       |Source Control (Git)          |❌                 |✅ Native          |⚠️ (Bitbucket add-on)    |
+|                         |CI/CD Pipelines               |❌                 |✅ Native          |⚠️ (Bitbucket add-on)    |
+|                         |Test Management               |⚠️                 |✅                 |✅ (add-on)              |
+|                         |Release Management            |⚠️                 |✅                 |✅                       |
+|**ITSM / Service Mgmt**  |Incident Management           |✅ Best-in-class   |⚠️                 |✅ (JSM add-on)          |
+|                         |Change Management             |✅                 |⚠️                 |✅ (JSM add-on)          |
+|                         |CMDB / Asset Management       |✅                 |❌                 |⚠️ (add-on)              |
+|                         |SLA Management                |✅                 |❌                 |✅ (JSM)                 |
+|                         |Self-Service Portal           |✅                 |⚠️                 |✅ (JSM)                 |
+|**Security & Compliance**|Role-Based Access Control     |✅                 |✅                 |✅                       |
+|                         |SSO / MFA                     |✅                 |✅                 |✅                       |
+|                         |Audit Logs                    |✅                 |✅                 |✅                       |
+|                         |FedRAMP / HIPAA / SOC2        |✅                 |✅                 |✅                       |
+|**Extensibility & AI**   |Marketplace / App Store       |✅                 |✅                 |✅ Large                 |
+|                         |REST API                      |✅                 |✅                 |✅                       |
+|                         |Automation / No-Code Rules    |✅ Advanced        |✅                 |✅                       |
+|                         |AI / Copilot Features         |✅ Now Assist      |✅ Copilot         |✅ Atlassian Intelligence|
+|**Pricing**              |Free Tier                     |❌                 |✅ (5 users)       |✅ (10 users)            |
+|                         |Relative Cost                 |💲💲💲               |💲💲                |💲💲                      |
+
+**Legend:** ✅ Full support · ⚠️ Partial / requires add-on · ❌ Not available
+
+-----
+
+## 2. Pros & Cons
+
+### ServiceNow
+
+**Pros**
+
+- Best-in-class enterprise ITSM — incident, change, problem, and asset management in one platform
+- Highly configurable workflows via low-code Flow Designer
+- Strong CMDB for hybrid infrastructure tracking
+- Advanced dashboards and SLA reporting built in
+- Now Assist AI for ticket routing, summarization, and resolution suggestions
+- Broad compliance coverage (FedRAMP, HIPAA, SOC2, ISO 27001)
+- Single platform spanning IT, HR, security, and customer service
+
+**Cons**
+
+- Highest cost of the three; pricing requires direct sales engagement
+- Complex implementation — typically needs specialist consultants and months of setup
+- Not built for software development; limited Agile/sprint tooling
+- Knowledge management exists but is not a full wiki; documentation is weaker than competitors
+- No native chat — relies entirely on Teams or Slack integrations for team communication
+- Overkill for small or mid-sized teams
+
+-----
+
+### Microsoft Azure DevOps (ADO)
+
+**Pros**
+
+- True end-to-end DevOps — repos, pipelines, test plans, and boards in a single suite
+- Deep native integration across the Microsoft ecosystem (Teams, Office 365, Power BI, Azure, GitHub)
+- Azure Wiki is Git-backed and version-controlled, with direct links to work items
+- GitHub Copilot integration for PR summaries, code generation, and work item automation
+- Generous free tier (5 users, 1,800 CI/CD pipeline minutes/month)
+- Strong Agile support — sprints, backlogs, velocity, and burndown charts out of the box
+- Flexible process templates: Agile, Scrum, CMMI, or fully custom
+
+**Cons**
+
+- Microsoft-centric — teams not invested in Azure/M365 get less native value
+- UI can feel complex and unintuitive for non-technical stakeholders
+- No enterprise ITSM — no CMDB, SLA management, or incident workflows
+- Native team communication requires Microsoft Teams as a separate product
+- Confluence or a third-party tool is still often needed for richer documentation beyond a wiki
+
+-----
+
+### Atlassian JIRA
+
+**Pros**
+
+- Market leader for Agile software development teams; widely understood
+- Highly flexible with a massive marketplace (5,000+ apps)
+- JIRA Service Management (JSM) add-on bridges the gap to ITSM (incident, SLA, portal)
+- Native Slack integration and strong two-way communication hooks
+- Atlassian Intelligence AI for auto-summarization, issue generation, and JQL assistance
+- Affordable free tier (up to 10 users); scales well for growing teams
+- Best ecosystem story when paired with Confluence (docs), Bitbucket (code), and Loom (video)
+
+**Cons**
+
+- Documentation and wiki require Confluence — a separate paid product — to match competitors
+- Can become complex and slow at large scale without careful project configuration
+- Reporting and dashboards are functional but less polished than ServiceNow or ADO
+- No native CI/CD or source control — requires Bitbucket or GitHub add-ons
+- Communication is notification-driven; no native chat; Teams integration is plugin-based
+
+-----
+
+## 3. Summary Recommendation
+
+|Use Case                                     |Best Fit                                         |
+|---------------------------------------------|-------------------------------------------------|
+|Enterprise IT service management             |**ServiceNow**                                   |
+|Software development teams on Microsoft stack|**Azure DevOps**                                 |
+|Agile development teams needing flexibility  |**JIRA**                                         |
+|Best built-in documentation                  |**Azure DevOps** (Azure Wiki)                    |
+|Best team communication integration          |**ADO** (Teams native) or **JIRA** (Slack native)|
+|Lowest total cost of entry                   |**JIRA**                                         |
